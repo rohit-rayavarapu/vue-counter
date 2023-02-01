@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from "vue";
 
 let counter = ref(0);
@@ -11,6 +11,30 @@ const addCount= () =>{
 const redCount = () =>{
   return counter.value = counter.value -1
 }
+
+using Composition_API
+</script> -->
+
+
+<script>
+export default({
+  data(){
+    return{
+      counter:0
+    }
+  },
+  methods:{
+    addCount(){
+      this.counter++
+    },
+    redCount(){
+      this.counter--
+    }
+  }
+})
+
+//using options_Api
+
 </script>
 
 
